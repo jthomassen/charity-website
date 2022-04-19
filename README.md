@@ -1,3 +1,3 @@
 prototype website in the making!
 
-testing a new change in git repo
+test project to review html and css.
