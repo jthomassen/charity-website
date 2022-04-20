@@ -1,19 +1,35 @@
+/* ------HOMEPAGE------ */
+
+/* --color pallete--
+
+body background 
+rgb(240, 247, 241)
+
+solid accents
+#66a33c
+
+font
+#3e5f27 */
+
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 247, 241);
 }
 
 
+/* search bar */
 
 .search {
     width: 100%;
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: rgb(209, 234, 255);
+    background-color: #66a33c;
     height: 60px;
 }
 
@@ -26,6 +42,7 @@ body {
     width: 200px;
     border-radius: 8px;
     border: none;
+    background-color: rgb(240, 247, 241);
 }
 
 .search-button {
@@ -33,9 +50,16 @@ body {
     width: 90px;
     border-radius: 8px;
     border: none;
-    background-color: white;
-
+    background-color: rgb(240, 247, 241);
+    color: #4b772d;
 }
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+
+/* header */
 
 .header {
     width: 68%;
@@ -51,6 +75,9 @@ body {
     width: 100px;
 }
 
+
+/* mission */
+
 .mission {
     width: 68%;
     position: relative;
@@ -59,7 +86,13 @@ body {
 
 .mission>img {
     width: 100%;
-    filter: brightness(50%)
+    filter: brightness(60%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.mission>img:hover {
+    filter: brightness(40%);
+    cursor: pointer;
 }
 
 .caption-wrap {
@@ -69,17 +102,21 @@ body {
     color: white;
 }
 
-.caption-wrap>a {
-    color: rgb(255, 255, 255);
+.caption-wrap>h2 {
+    font-size: xx-large;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-.caption-wrap>a:link {
-    text-decoration: none;
+.caption-wrap>p {
+    font-size: x-large;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.caption-wrap>a:hover {
-    color: rgb(249, 208, 97)
-}
+
+/* about */
 
 .about {
     margin-top: 30px;
@@ -91,23 +128,132 @@ body {
 }
 
 .fundrasing-box, .ourwork-box {
+    width: 48%;
     position: relative;
     text-align: left;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.fundrasing-box {
+    display: flex;
+    justify-content: left;
+}
+
+.ourwork-box {
+    display: flex;
+    justify-content: right;
 }
 
 .fundrasing-box>img, .ourwork-box>img {
-    width: 470px;
-    filter: brightness(60%)
+    width: 100%;
+    filter: brightness(60%);
 }
 
 .fundrasing-box>img:hover, .ourwork-box>img:hover {
-    filter: brightness(40%)
+    filter: brightness(40%);
+    cursor: pointer;
 }
 
 .fundrasing-box>h3, .ourwork-box>h3 {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size:x-large;
+}
+
+
+/* news */
+
+.news {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-box-1, .news-box-2, .news-box-3 {
+    height: 400px;
+    width: 30%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow-y: scroll;
+}
+
+.news-box-1> .news-box-head {
+    background-color: #66a33c;
+}
+
+.news-box-1> .news-box-head> h4 {
+    color: white;
+}
+
+.news-box-1> .h4-content-box {
+    margin-top: 20px;
+}
+
+/* @media screen and (max-width: 800px) {
+    .news-box-1> .h4-content-box> :last-child {
+      display: none;
+    }
+} */
+
+.news-box-2>img, .news-box-3>img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-box-head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.news-box-head>h4 {
+    color: black;
+}
+
+.news-box-head>h4:hover {
+    cursor: pointer;
+    color: #3e5f27;
+}
+
+.news-box-1>.news-box-head>h4:hover {
+    color: white;
+    cursor: default;
+}
+
+.h4-content-box {
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* @media screen and (max-width: 1200px) {
+    .h4-content-box> p {
+      display: none;
+    }
+} */
+
+.h4-content-box> p {
+    margin: 0;
+}
+
+.h4-content-box> .link-date> a {
+    text-decoration: none;
+    color: #3e5f27;
+}
+
+.h4-content-box> .link-date> a:visited {
+    color: #3e5f27;
+}
+
+.link-date>h5 {
+    margin-top: 10px;
 }
