@@ -1,3 +1,3 @@
-prototype website in the making!
+This is prototype website based on a charity website wireframe, built during my web apps training at FDM
 
-test project to review html and css.
+Mostly review, this website is built only using html and css. I implemented some bootstrap to get more acquainted with a different methodology of styling and page layout.

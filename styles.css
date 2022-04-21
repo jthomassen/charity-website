@@ -305,7 +305,7 @@ body {
 
 .social-logo-wrap {
     width: 12%;
-    height: 85%;
+    height: 65%;
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -349,7 +349,8 @@ body {
 .article-box>h1 {
     margin-top: 0;
     color:#233615;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    font-size: 30px;
 }
 
 .article-box>h2 {
@@ -401,3 +402,15 @@ body {
     color: white;
 }
 
+
+/* ------ARTICLE TWO------- */
+
+#article-section>img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.h4-content-box-2 {
+    
+}
